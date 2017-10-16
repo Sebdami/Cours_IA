@@ -77,7 +77,6 @@ namespace crea
 		Json::Value tileSets = root["tilesets"];
 		Json::Value tileSet1 = tileSets[0];
 		m_pTerrainTileSet = new TileSet();
-		m_pTerrainTileSet->m_pSprite = m_pGM->getSprite(tileSet1["image"].asString());
 		m_pTerrainTileSet->m_nColumns = tileSet1["columns"].asInt();
 		m_pTerrainTileSet->m_nFirstgid = tileSet1["firstgid"].asInt();
 		m_pTerrainTileSet->m_nImageheight = tileSet1["imageheight"].asInt();
@@ -89,6 +88,12 @@ namespace crea
 		m_pTerrainTileSet->m_nTileheight = tileSet1["tileheight"].asInt();
 		m_pTerrainTileSet->m_nTilewidth = tileSet1["tilewidth"].asInt();
 		
+		string str = tileSet1["image"].asString();
+		size_t last = str.find_last_of('/');
+		str = str.substr(last+1);
+		m_pTerrainTileSet->m_pSprite = m_pGM->getSprite(str);
+		m_pTerrainTileSet->m_pSprite->setTexture(m_pGM->getTexture(str));
+
 
 		// Load Terrains
 		for (Json::Value a : tileSet1["terrains"])
@@ -217,7 +222,6 @@ namespace crea
 	bool Map::draw()
 	{
 		int tileid = 0, w = 0, h = 0, x = 0, y = 0;
-
 		// Camera/Window restriction
 		IntRect r = m_pGM->getWindowRect();
 		int iMin = (int)r.getLeft() / m_nTileWidth;
@@ -229,11 +233,9 @@ namespace crea
 		TileSet* pTileSet = m_pTerrainTileSet;
 		if (!m_pTerrainTileSet)
 		{
-			cout << "Oh shiet" << endl;
+
 			return false;
 		}
-			
-
 		for (short i = iMin; i <= iMax; i++)
 		{
 			Node** line = m_Grid[i];
