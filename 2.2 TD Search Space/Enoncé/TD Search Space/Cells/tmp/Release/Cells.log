@@ -1,0 +1,6 @@
+﻿  Cells.vcxproj -> D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\..\bin\Cells.exe
+  Cells.vcxproj -> D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\..\bin\Cells.pdb (Full PDB)
+  D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\..\..\CreaEngine\bin\CreaEngine-d.dll
+  Violation de partage
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: La commande "xcopy /y /d "D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\..\..\CreaEngine\bin\*.dll" "D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\..\bin\"
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :VCEnd" s'est arrêtée avec le code 4.

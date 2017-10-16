@@ -1,0 +1,23 @@
+﻿  CreaEngine.cpp
+  jsoncpp.cpp
+  InputManager.cpp
+  Texture.cpp
+  TextRenderer.cpp
+  Text.cpp
+  SpriteRenderer.cpp
+  Sprite.cpp
+  MapRenderer.cpp
+  Font.cpp
+  Color.cpp
+  TileSet.cpp
+  SceneManager.cpp
+  Node.cpp
+  Map.cpp
+  GameManager.cpp
+  EntityManager.cpp
+  Entity.cpp
+  DataManager.cpp
+  Scene.cpp
+  Component.cpp
+  Génération de code en cours...
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: type d'ordinateur module 'X86' en conflit avec le type d'ordinateur cible 'x64'
