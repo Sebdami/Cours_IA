@@ -1,0 +1,6 @@
+﻿  Map.cpp
+d:\svn\2017-2018\sections\prog3b\sebastien damiens\cours_ia\3.1 td agents\enoncé\td agents\creaengine\src\data\map.cpp(138): warning C4018: '<' : incompatibilité signed/unsigned
+d:\svn\2017-2018\sections\prog3b\sebastien damiens\cours_ia\3.1 td agents\enoncé\td agents\creaengine\src\data\map.cpp(144): warning C4244: 'argument' : conversion de 'Json::Value::Int' en 'float', perte possible de données
+  CreaEngine.vcxproj -> D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\3.1 TD Agents\Enoncé\TD Agents\CreaEngine\src\..\bin\CreaEngine-d.dll
+  D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\3.1 TD Agents\Enoncé\TD Agents\CreaEngine\src\..\bin\CreaEngine-d.dll
+  1 fichier(s) copié(s)

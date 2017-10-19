@@ -22,7 +22,7 @@ bool SceneMap::onInit()
 	// Load Map
 	m_pEntity3 = m_pGM->getEntity("map0");
 	m_pGM->addEntity(m_pEntity3);
-	m_pMap = m_pGM->getMap("map0.json"); // CB: TO CHANGE: map id loaded after entity added to display map first (order in tree matters)
+	m_pMap = m_pGM->getMap("desert3.json"); // CB: TO CHANGE: map id loaded after entity added to display map first (order in tree matters)
 	m_pMapRenderer = m_pGM->getMapRenderer("MapRenderer1");
 	m_pMapRenderer->setMap(m_pMap);
 	m_pEntity3->addComponent(m_pMapRenderer);

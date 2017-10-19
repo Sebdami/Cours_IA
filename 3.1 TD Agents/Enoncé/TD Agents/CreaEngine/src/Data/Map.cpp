@@ -70,6 +70,7 @@ namespace crea
 			pTileSet->m_nColumns = tileset["columns"].asInt();
 			pTileSet->m_nFirstgid = tileset["firstgid"].asInt();
 			string image = tileset["image"].asString();
+			image = image.substr(image.find_last_of("/") + 1);
 			pTileSet->m_nImageheight = tileset["imageheight"].asInt();
 			pTileSet->m_nImagewidth = tileset["imagewidth"].asInt();
 			pTileSet->m_nMargin = tileset["margin"].asInt();
@@ -132,11 +133,37 @@ namespace crea
 				}
 			}
 
+			//Objects
+			
+			for (int i = 0; i < root["objects"].size(); i++)
+			{
+				Json::Value object = root["objects"][i];
+				Json::Value tileset = root["tilesets"][i+1];
+
+				Entity* pEntity = m_pGM->getEntity(object["name"].asString());
+				pEntity->setPosition(Vector2f(object["x"].asInt(), object["y"].asInt() - object["height"].asInt()));
+				m_pGM->addEntity(pEntity);
+				SpriteRenderer* pSpriteRenderer = new crea::SpriteRenderer();
+				pEntity->addComponent(pSpriteRenderer);
+				string texturePath = tileset["image"].asString();
+				texturePath = texturePath.substr(texturePath.find_last_of("/") + 1);
+				Texture* pTexture = m_pGM->getTexture(texturePath);
+				Sprite* pSprite = m_pGM->getSprite(object["name"].asString()); 
+				pSprite->setTexture(pTexture);
+				pSpriteRenderer->setSprite(pSprite);
+				if (!tileset["tileproperties"].isNull())
+				{
+					//pEntity->loadFromFileJSON(object);
+				}
+				
+			}
+
 			// TD Agents
 			// A compléter
-
+			
 			//Entity* pEntity = m_pGM->getEntity(name);
 			//pEntity->setPosition(x, y);
+
 			//m_pGM->addEntity(pEntity);
 			//SpriteRenderer* pSpriteRenderer = new crea::SpriteRenderer();
 			//pEntity->addComponent(pSpriteRenderer);
