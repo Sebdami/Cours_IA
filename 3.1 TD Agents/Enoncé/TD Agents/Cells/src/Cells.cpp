@@ -19,7 +19,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	pGM->setScene(new SceneMap());
 
-	pGM->setWindowRect(IntRect(0, 0, 896, 896));
+	pGM->setWindowRect(IntRect(0, 0, 1024, 896));
 
 	pGM->init();
 
