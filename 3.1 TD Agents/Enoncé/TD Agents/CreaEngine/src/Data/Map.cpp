@@ -135,9 +135,9 @@ namespace crea
 
 			//Objects
 			
-			for (int i = 0; i < root["objects"].size(); i++)
+			for (int i = 0; i < root["layers"][1]["objects"].size(); i++)
 			{
-				Json::Value object = root["objects"][i];
+				Json::Value object = root["layers"][1]["objects"][i];
 				Json::Value tileset = root["tilesets"][i+1];
 
 				Entity* pEntity = m_pGM->getEntity(object["name"].asString());
