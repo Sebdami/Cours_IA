@@ -1,32 +1,6 @@
-﻿  CreaEngine.cpp
-  jsoncpp.cpp
-  InputManager.cpp
-  Texture.cpp
-  TextRenderer.cpp
-  Text.cpp
-  SpriteRenderer.cpp
-  Sprite.cpp
-  MapRenderer.cpp
-  Font.cpp
-  Color.cpp
-  TileSet.cpp
-  SceneManager.cpp
-  Node.cpp
-  Map.cpp
+﻿  Map.cpp
 d:\seb\bureau\cours\cours_ia\3.1 td agents\enoncé\td agents\creaengine\src\data\map.cpp(137): warning C4018: '<': signed/unsigned mismatch
 d:\seb\bureau\cours\cours_ia\3.1 td agents\enoncé\td agents\creaengine\src\data\map.cpp(143): warning C4244: 'argument': conversion from 'Json::Value::Int' to 'float', possible loss of data
-  GameManager.cpp
-  EntityManager.cpp
-  Entity.cpp
-  DataManager.cpp
-  TimeManager.cpp
-  Scene.cpp
-  Generating Code...
-  Compiling...
-  Component.cpp
-  Agent.cpp
-  Generating Code...
-     Creating library D:\Seb\Bureau\Cours\Cours_IA\3.1 TD Agents\Enoncé\TD Agents\CreaEngine\src\..\lib\CreaEngine-d.lib and object D:\Seb\Bureau\Cours\Cours_IA\3.1 TD Agents\Enoncé\TD Agents\CreaEngine\src\..\lib\CreaEngine-d.exp
   CreaEngine.vcxproj -> D:\Seb\Bureau\Cours\Cours_IA\3.1 TD Agents\Enoncé\TD Agents\CreaEngine\src\..\bin\CreaEngine-d.dll
   D:\Seb\Bureau\Cours\Cours_IA\3.1 TD Agents\Enonc�\TD Agents\CreaEngine\src\..\bin\CreaEngine-d.dll
   1 fichier(s) copi�(s)

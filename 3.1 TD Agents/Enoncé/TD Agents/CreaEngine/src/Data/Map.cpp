@@ -132,7 +132,7 @@ namespace crea
 					}
 				}
 			}
-
+		}
 			//Objects
 			for (int i = 0; i < root["layers"][1]["objects"].size(); i++)
 			{
@@ -170,8 +170,6 @@ namespace crea
 
 			// Properties
 			//pEntity->loadFromFileJSON("name.ent");
-
-		}
 
 		return true;
 	}
