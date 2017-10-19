@@ -173,7 +173,7 @@ namespace crea
 	bool Entity::loadFromFileJSON(string& _filename)
 	{
 		Json::Value root;
-		std::ifstream entityStream(_filename, std::ifstream::binary);
+		std::ifstream entityStream( DATAAGENTPATH + _filename, std::ifstream::binary);
 		if (entityStream.fail())
 		{
 			cerr << "Can't open Entity file: " << _filename << endl;
@@ -201,6 +201,7 @@ namespace crea
 				Sprite* pSprite = pGM->getSprite(szSprite);
 
 				string szTexture = component["image"].asString();
+				szTexture = szTexture.substr(szTexture.find_last_of("/"));
 				Texture* pTexture = pGM->getTexture(szTexture);
 				pSprite->setTexture(pTexture);
 

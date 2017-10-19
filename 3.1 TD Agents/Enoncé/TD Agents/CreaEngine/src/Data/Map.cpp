@@ -134,7 +134,6 @@ namespace crea
 			}
 
 			//Objects
-			
 			for (int i = 0; i < root["layers"][1]["objects"].size(); i++)
 			{
 				Json::Value object = root["layers"][1]["objects"][i];
@@ -153,9 +152,8 @@ namespace crea
 				pSpriteRenderer->setSprite(pSprite);
 				if (!tileset["tileproperties"].isNull())
 				{
-					//pEntity->loadFromFileJSON(object);
+					pEntity->loadFromFileJSON(tileset["tileproperties"]["0"]["Entity"].asString());
 				}
-				
 			}
 
 			// TD Agents
