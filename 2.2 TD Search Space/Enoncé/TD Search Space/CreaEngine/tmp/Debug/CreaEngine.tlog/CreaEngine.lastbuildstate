@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
-Debug|Win32|D:\Seb\Bureau\Cours\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.15063.0
+Debug|Win32|D:\SVN\2017-2018\Sections\Prog3B\Sebastien Damiens\Cours_IA\2.2 TD Search Space\Enoncé\TD Search Space\Cells\src\|
